@@ -1,0 +1,4 @@
+[submodule "refinedstorage"]
+	path = refinedstorage
+	url = https://github.com/refinedmods/refinedstorage
+	branch = support/1.6.x
