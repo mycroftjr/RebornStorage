@@ -48,14 +48,14 @@ public class TileMultiCrafter extends RectangularMultiblockTileEntityBase implem
 
 	@Override
 	public void isGoodForTop() throws MultiblockValidationException {
-		if (!getVarient().equals("heat")) {
+		if (!getVarient().equals("heat") && !getVarient().equals("io")) {
 			throw new MultiblockValidationException(getVarient() + " is not valid for the top of the block");
 		}
 	}
 
 	@Override
 	public void isGoodForBottom() throws MultiblockValidationException {
-		if (!getVarient().equals("heat")) {
+		if (!getVarient().equals("heat") && !getVarient().equals("io")) {
 			throw new MultiblockValidationException(getVarient() + " is not valid for the bottom of the block");
 		}
 	}
